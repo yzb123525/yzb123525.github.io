@@ -1,1 +1,162 @@
-theme: jekyll-theme-cayman
+theme: cube
+
+# background display for mobile, not for pc
+header:
+  background: http://cube-1252774894.cosgz.myqcloud.com/background.png
+  # both pc and mobile required title(make it the same as your hexo site _config.yml's title)
+  title: senrenbankaの部落格
+
+
+# background display for pc
+# you can use url or path relative
+# `background: background.png` refers to the path "source/images/background.png"
+background: http://cube-1252774894.cosgz.myqcloud.com/background.png
+
+
+# the background image width and height (you can see your image file to get them)
+width: 2000
+height: 1414
+
+
+# this variable is used to locate your background
+# for example, if you want to locate display your background from top
+# you just need to type it: position: 0
+position: 400
+
+
+# this variable is used to make the background header being fuzzy
+# if your do not need the filter blur on the top, make it empty, it means that: `blur: `
+blur: 5
+
+
+# yeah, it is just to make your avatar rounded(true) or not(false)
+avatar: true
+
+menu:
+  # index
+  - title: 首页
+    icon: home
+    url: /
+  # archives
+  - title: 归档
+    icon: archive
+    url: archives
+  # categories
+  - title: 分类
+    icon: categories
+    url: categories
+  # tags
+  - title: 标签
+    icon: tags
+    url: tags
+  # about-me
+  - title: 关于我
+    icon: about
+    url: about-me
+
+sidebar:
+  links:
+    - title: GitHub
+      url: https://github.com/ZEROKISEKI
+      # icon can be url or path
+      icon: http://cube-1252774894.cosgz.myqcloud.com/links/GitHub.png
+    - title: Coding
+      url: https://coding.net/u/SORA1
+      icon: http://cube-1252774894.cosgz.myqcloud.com/links/Coding.png
+    - title: SF社区
+      url: https://segmentfault.com/u/aonosora
+      icon: http://cube-1252774894.cosgz.myqcloud.com/links/SF.png
+    - title: 开发者头条
+      url: https://toutiao.io/u/148070
+      icon: http://cube-1252774894.cosgz.myqcloud.com/links/开发者头条.png
+  friend_links:
+    - title: 罗大佬
+      url: https://blog.micblo.com/
+      # icon only url
+      icon: http://cube-1252774894.cosgz.myqcloud.com/friend_links/micblo.png
+    - title: DIYgod
+      url: https://www.anotherhome.net/
+      icon: http://cube-1252774894.cosgz.myqcloud.com/friend_links/DIYgod.jpg
+    - title: 咪西西の部落格
+      url: https://aonosora.com/
+
+# only path, refer to source/images
+friend_links: friend_links.jpg
+
+widgets:
+- search
+- author
+- music
+- recent_posts
+- categories
+- tagcloud
+- links
+- friend_links
+
+# when you want to use the search, firstly make the `search: true`,
+# then you should install hexo-generator-json-content
+# run `npm install hexo-generator-json-content -save` (in your hexo directory)
+search: true
+
+# supported by DIYgod awesome project APlayer, you can find more on https://github.com/MoePlayer/APlayer
+# and you can see the doc on https://aplayer.js.org/docs/#/
+
+# mode can be `random`, `single`, `circulation`(loop), `order`(no loop)
+# if you have the lrc file, make the `showlrc` true, else make it false
+music_setting:
+  auto: false
+  mode: circulation
+  narrow: false
+  mutex: true
+  showlrc: true
+  theme:
+  preload: auto
+  maxHeight: 513px
+
+# if you use path, make sure your hexo _config.yml has set the correcting url
+# url: http://www.yoururl.com/path/to/.mp3 or .lrc or ...
+# you'd better place your music and image, lrc to another site, and use url instead of path
+# if you don't want to use this widget, just make that `music: `
+music:
+  - title: Dear friends
+    author: TRIPLANE
+    source: http://cube-1252774894.cosgz.myqcloud.com/music/source/TRIPLANE - Dear friends.mp3
+    lrc: http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Dear friends - TRIPLANE.lrc
+    image: http://cube-1252774894.cosgz.myqcloud.com/music/image/TRIPLANE - Dear friends.jpg
+  - title: Butter-Fly
+    author: 和田光司
+    source: http://cube-1252774894.cosgz.myqcloud.com/music/source/和田光司 - Butter-Fly (ピアノヴァージョン).mp3
+    lrc: http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Butter-Fly (ピアノヴァージョン) - 和田光司.lrc
+    image: http://cube-1252774894.cosgz.myqcloud.com/music/image/和田光司 - Butter-Fly (ピアノヴァージョン).jpg
+  - title: 宵闇花火
+    author: 葉月ゆら
+    source: http://cube-1252774894.cosgz.myqcloud.com/music/source/葉月ゆら - 宵闇花火.mp3
+    lrc: http://cube-1252774894.cosgz.myqcloud.com/music/lrc/宵闇花火 - 葉月ゆら.lrc
+    image: http://cube-1252774894.cosgz.myqcloud.com/music/image/葉月ゆら - 宵闇花火.jpg
+
+# before using the comment
+# make use you know how to set the params
+comment:
+  # your disqus_shortname
+  disqus:
+  changyan:
+    appid:
+    conf:
+  youyan:
+  # gitment: https://github.com/imsun/gitment
+  # make sure you know how to set it
+  gitment:
+    owner:
+    repo:
+    oauth:
+      client_id:
+      client_secret:
+
+# some setting about comment module
+comment_setting:
+  changyan:
+    hide_notice: true
+
+analytics:
+  baidu:
+  google:
